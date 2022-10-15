@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+             xmlns="http://java.sun.com/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence
+http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd
+http://www.w3.org/2001/XMLSchema-instance
+ ">
+    <persistence-unit name="MyUnit" transaction-type="RESOURCE_LOCAL">
+        <!-- Persistence provider -->
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>Enitities.FrekwencjaEntity</class>
+        <class>Enitities.KlasyEntity</class>
+        <class>Enitities.LekcjeEntity</class>
+        <class>Enitities.NauczycieleEntity</class>
+        <class>Enitities.NauczycieleprzedmiotowEntity</class>
+        <class>Enitities.OcenyEntity</class>
+        <class>Enitities.PrzedmiotyEntity</class>
+        <class>Enitities.PrzedmiotyklasEntity</class>
+        <class>Enitities.UczniowieEntity</class>
+        <class>Enitities.UzytkownicyEntity</class>
+        <!-- Entity classes -->
+        <properties>
+            <!-- The JDBC driver of your database -->
+            <property name="javax.persistence.jdbc.driver"
+                      value="org.postgresql.Driver"/>
+            <!-- The JDBC URL to the database instance -->
+            <property name="javax.persistence.jdbc.url"
+                      value="jdbc:postgresql://abul.db.elephantsql.com:5432/ikyxpswp"/>
+            <!-- The database username -->
+            <property name="javax.persistence.jdbc.user" value="ikyxpswp"/>
+            <!-- The database password -->
+            <property name="javax.persistence.jdbc.password" value="G-Quql5IbyfaoXEIg8OSmjolzoKo50kT"/>
+            <property name="hibernate.connection.url" value="jdbc:postgresql://abul.db.elephantsql.com:5432/ikyxpswp"/>
+            <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
+            <property name="hibernate.connection.username" value="ikyxpswp"/>
+            <property name="hibernate.connection.password" value="G-Quql5IbyfaoXEIg8OSmjolzoKo50kT"/>
+        </properties>
+    </persistence-unit>
+</persistence>
