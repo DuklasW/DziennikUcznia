@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.zaliczenieklient2.LoginWindowController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="700.0" prefWidth="1000.0" VBox.vgrow="ALWAYS">
+         <children>
+             <ImageView fitHeight="380.0" fitWidth="442.0" layoutX="312.0" layoutY="55.0" preserveRatio="true">
+                 <image>
+                     <Image url="@loginIcon.png" />
+                 </image>
+             </ImageView>
+            <Label fx:id="errorUsername" layoutX="399.0" layoutY="510.0" prefHeight="18.0" prefWidth="204.0" textFill="RED" />
+            <TextField fx:id="aLogin" layoutX="398.0" layoutY="484.0" prefHeight="26.0" prefWidth="204.0" promptText="Username" />
+            <PasswordField fx:id="aPassword" layoutX="399.0" layoutY="537.0" prefHeight="25.0" prefWidth="204.0" promptText="Password" />
+            <Button fx:id="button" layoutX="456.0" layoutY="589.0" onAction="#logInButton" prefHeight="30.0" prefWidth="88.0" text="Login" />
+            <Label fx:id="errorPassword" layoutX="399.0" layoutY="562.0" prefHeight="18.0" prefWidth="204.0" textFill="RED" />
+            <Label fx:id="labelError" layoutX="384.0" layoutY="647.0" prefHeight="17.0" prefWidth="237.0" textFill="RED" />
+            <Label fx:id="connect" layoutX="51.0" layoutY="668.0" prefHeight="17.0" prefWidth="88.0" text="Disconnect" />
+            <ImageView fx:id="limeRefresh" fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="664.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="11.248756408691406" AnchorPane.leftAnchor="14.0">
+               <image>
+                  <Image url="@limeRefresh.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="redRefresh" fitHeight="25.0" fitWidth="25.0" layoutX="14.0" layoutY="664.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="11.248756408691406" AnchorPane.leftAnchor="14.0">
+               <image>
+                  <Image url="@redRefresh.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="Button2" layoutX="14.0" layoutY="664.0" mnemonicParsing="false" onAction="#refreshButton" opacity="0.0" prefHeight="25.0" prefWidth="25.0" AnchorPane.bottomAnchor="11.0" AnchorPane.leftAnchor="14.0" />
+            <Button layoutX="928.0" layoutY="664.0" mnemonicParsing="false" onAction="#closeApplication" text="Zamknij" />
+         </children></AnchorPane>
+  </children>
+</VBox>

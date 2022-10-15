@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.zaliczenieklient2.AppWindowController">
+
+   <children>
+      <BorderPane fx:id="mainPane" prefHeight="700.0" prefWidth="1000.0">
+         <left>
+            <VBox prefHeight="327.0" prefWidth="155.0" style="-fx-background-color: #23aea3;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="oceny" mnemonicParsing="false" onAction="#ocenyButton" prefHeight="40.0" prefWidth="155.0" style="-fx-background-color: #23aea3;" text="Oceny" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8-exam-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets right="50.0" />
+                     </padding>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#frekwencjaButton" prefHeight="40.0" prefWidth="155.0" style="-fx-background-color: #23aea3;" text="Frekwencja" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8-calendar-64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="10.0" right="30.0" />
+                     </padding>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#planlekcjiButton" prefHeight="40.0" prefWidth="155.0" style="-fx-background-color: #23aea3;" text="Plan Lekcji" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8-calendar-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets right="25.0" />
+                     </padding>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#uczenButton" prefHeight="40.0" prefWidth="145.0" style="-fx-background-color: #23aea3;" text="Uczeń" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="20.0" right="10.0" top="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icons8-student-99.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets right="50.0" />
+                     </padding>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#logout" prefHeight="24.0" prefWidth="82.0" text="Wyloguj">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="40.0" right="40.0" top="260.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <Pane prefHeight="75.0" prefWidth="816.0" style="-fx-background-color: #1c8b82;" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fx:id="welcome" fill="WHITE" layoutX="14.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Witaj, Imię Nazwisko!">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </top>
+         <bottom>
+            <Pane prefHeight="35.0" prefWidth="642.0" style="-fx-background-color: #1c8b82;" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fx:id="helloRola" fill="WHITE" layoutX="833.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zalogowano na konto ucznia" />
+               </children></Pane>
+         </bottom>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text layoutX="378.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wybierz opcję" wrappingWidth="89.947265625">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </center>
+         <right>
+            <Pane prefHeight="590.0" prefWidth="11.0" style="-fx-background-color: #23aea3;" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

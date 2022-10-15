@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="590.0" minWidth="805.0" prefHeight="366.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.zaliczenieklient2.frequencyTWindowController">
+   <children>
+      <BorderPane prefHeight="590.0" prefWidth="805.0">
+         <top>
+            <Pane prefHeight="60.0" prefWidth="600.0" style="-fx-background-color: #23aea3;" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fill="WHITE" layoutX="315.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Frekwencja">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </top>
+         <bottom>
+            <Pane prefHeight="69.0" prefWidth="828.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="errorFrequency" layoutX="610.0" layoutY="26.0" prefHeight="17.0" prefWidth="124.0" textFill="RED" />
+                  <Button layoutX="734.0" layoutY="22.0" mnemonicParsing="false" onAction="#printSelected" prefHeight="25.0" prefWidth="55.0" text="Send" />
+                  <ChoiceBox fx:id="hoursCheckBox" layoutX="33.0" layoutY="31.0" prefWidth="150.0" />
+                  <Label fx:id="errorHourLabel" layoutX="40.0" layoutY="14.0" prefHeight="17.0" prefWidth="218.0" text="Wybierz godzinę lekcyjną" textFill="#0a0a0a" />
+               </children>
+            </Pane>
+         </bottom>
+         <center>
+            <SplitPane dividerPositions="0.14814814814814814" orientation="VERTICAL" prefHeight="481.0" prefWidth="805.0" BorderPane.alignment="CENTER">
+               <items>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="121.0" prefWidth="803.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="49.0" prefWidth="805.0" spacing="30.0">
+                           <children>
+                              <ChoiceBox fx:id="subjectCheckBox" prefWidth="150.0" />
+                              <DatePicker fx:id="frequencyDatePicker" />
+                              <ChoiceBox fx:id="classCheckBox" prefWidth="150.0" />
+                           </children>
+                        </HBox>
+                        <Pane layoutY="35.0" prefHeight="31.0" prefWidth="799.0">
+                           <children>
+                              <Label fx:id="classerrorLabel" layoutX="555.0" layoutY="6.0" text="Wybierz klasę" />
+                              <Label fx:id="subjecterrorLabel" layoutX="148.0" layoutY="6.0" text="Wybierz przedmiot" />
+                              <Label fx:id="dayErrorLabel" layoutX="349.0" layoutY="8.0" text="Wybierz Date" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <TableView fx:id="table" layoutX="-1.0" layoutY="-2.0" prefHeight="393.0" prefWidth="805.0">
+                           <columns>
+                              <TableColumn prefWidth="545.0" text="Studenci">
+                                 <columns>
+                                    <TableColumn fx:id="id" maxWidth="-1.0" minWidth="45.0" prefWidth="45.0" text="Id" />
+                                    <TableColumn fx:id="name" maxWidth="-1.0" minWidth="250.0" prefWidth="250.0" text="Imie" />
+                                    <TableColumn fx:id="surname" maxWidth="-1.0" minWidth="250.0" prefWidth="250.0" text="Nazwisko" />
+                                 </columns>
+                              </TableColumn>
+                              <TableColumn fx:id="presents" minWidth="0.0" text="obecnosc" />
+                              <TableColumn fx:id="absent" prefWidth="90.0" text="nieobecnosc" />
+                              <TableColumn fx:id="exempt" prefWidth="90.0" text="zwolniony" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

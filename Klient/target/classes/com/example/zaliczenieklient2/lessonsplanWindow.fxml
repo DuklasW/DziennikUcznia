@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="590.0" prefWidth="835.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.zaliczenieklient2.LessonsPlanWindowController">
+   <children>
+      <BorderPane prefHeight="590.0" prefWidth="835.0">
+         <top>
+            <Pane prefHeight="60.0" prefWidth="600.0" style="-fx-background-color: #23aea3;" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fill="WHITE" layoutX="353.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Plan Lekcji">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </top>
+         <center>
+            <GridPane fx:id="gridpane" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Godzina" textAlignment="CENTER" wrappingWidth="141.55859375" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Poniedziałek" textAlignment="CENTER" wrappingWidth="139.755859375" GridPane.columnIndex="1" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Wtorek" textAlignment="CENTER" wrappingWidth="139.71875" GridPane.columnIndex="2" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sroda" textAlignment="CENTER" wrappingWidth="137.75" GridPane.columnIndex="3" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Czwartek" textAlignment="CENTER" wrappingWidth="142.111328125" GridPane.columnIndex="4" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Piatek" textAlignment="CENTER" wrappingWidth="137.0390625" GridPane.columnIndex="5" />
+                  <Text fx:id="0x1" strokeType="OUTSIDE" strokeWidth="0.0" text="8:00-8:45" textAlignment="CENTER" wrappingWidth="139.814453125" GridPane.rowIndex="1" />
+                   <Text fx:id="0x2" strokeType="OUTSIDE" strokeWidth="0.0" text="8:50-9:35" textAlignment="CENTER" wrappingWidth="141.814453125" GridPane.rowIndex="2" />
+                   <Text fx:id="0x3" strokeType="OUTSIDE" strokeWidth="0.0" text="9:40-10:25" textAlignment="CENTER" wrappingWidth="141.283203125" GridPane.rowIndex="3" />
+                   <Text fx:id="0x4" strokeType="OUTSIDE" strokeWidth="0.0" text="10:40-11:25" textAlignment="CENTER" wrappingWidth="140.275390625" GridPane.rowIndex="4" />
+                   <Text fx:id="0x5" strokeType="OUTSIDE" strokeWidth="0.0" text="11:35-12:20" textAlignment="CENTER" wrappingWidth="141.751953125" GridPane.rowIndex="5" />
+                   <Text fx:id="0x6" strokeType="OUTSIDE" strokeWidth="0.0" text="12:25-13:10" textAlignment="CENTER" wrappingWidth="138.751953125" GridPane.rowIndex="6" />
+                   <Text fx:id="0x7" strokeType="OUTSIDE" strokeWidth="0.0" text="13:15-14:00" textAlignment="CENTER" wrappingWidth="141.751953125" GridPane.rowIndex="7" />
+                   <Text fx:id="1x1" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="JUSTIFY" wrappingWidth="114.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                   <Text fx:id="1x2" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                   <Text fx:id="1x3" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                   <Text fx:id="1x4" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                   <Text fx:id="1x5" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                   <Text fx:id="1x6" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                   <Text fx:id="1x7" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                   <Text fx:id="2x1" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                   <Text fx:id="2x2" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                   <Text fx:id="2x3" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                   <Text fx:id="2x4" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                   <Text fx:id="2x5" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                   <Text fx:id="2x6" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                   <Text fx:id="2x7" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                   <Text fx:id="3x1" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                   <Text fx:id="3x2" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                   <Text fx:id="3x3" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                   <Text fx:id="3x4" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                   <Text fx:id="3x5" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                   <Text fx:id="3x6" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                   <Text fx:id="3x7" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                   <Text fx:id="4x1" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                   <Text fx:id="4x2" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                   <Text fx:id="4x3" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                   <Text fx:id="4x4" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                   <Text fx:id="4x6" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+                   <Text fx:id="4x7" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+                   <Text fx:id="5x1" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                   <Text fx:id="5x2" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                   <Text fx:id="5x3" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                   <Text fx:id="5x4" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                   <Text fx:id="4x5" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                   <Text fx:id="5x5" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                   <Text fx:id="5x6" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+                   <Text fx:id="5x7" strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
